@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+  />
+    <link
       href="https://api.fontshare.com/v2/css?f[]=erode@400&f[]=alpino@400&display=swap"
       rel="stylesheet"
     />
@@ -12,11 +16,12 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     />
+        
     <title>Elementor</title>
   </head>
   <body>
     <header>
-      <div class="full-wdith-container">
+      <div class="full-wdith-container navbar">
         <div class="container">
           <div class="nav-content">
             <div class="logo"><img src="/assets/logo.svg" alt="logo" /></div>
@@ -111,7 +116,7 @@
             </li>           
             </ul>
             <div class="login"><a href="/">Login</a></div>
-            <button class="cta-btn">Get Started</button>
+            <button class="cta-btn home-btn">Get Started</button>
  
           </div>
         </div>
@@ -128,7 +133,7 @@
                 Create Your Future
               </h1>
               <p class="summary">
-                Host, build & grow the website you’ve always dreamed of with the
+                Host, build & grow the website you’ve always dreamed of<br> with the
                 leading website platform for WordPress.
               </p>
               <button class="cta-btn primary-btn">Get Started</button>
@@ -138,10 +143,10 @@
       </div>
     </div>
 
-    <section class="container content-padding">
+    <section class="container ">
       <div class="card">
         <div class="card-content">
-          <span class="card-icon"><i class="fa-solid fa-heart"></i></span>
+          <span class="card-icon"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M3.38884 4.53675C2.56711 4.53859 1.90246 5.20622 1.9043 6.02795L1.95637 29.2759C1.95821 30.0976 2.62584 30.7622 3.44756 30.7604L17.2103 30.7296L24.9446 30.7123L20.4789 20.3221C20.2696 19.8352 20.7538 19.3391 21.2454 19.5368L32.4461 24.0411L32.4056 5.95964C32.4037 5.13791 31.7361 4.47326 30.9144 4.4751L3.38884 4.53675Z" fill="black"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M25.041 30.7636L25.8926 32.6482L30.9636 45.0836C31.2229 45.7195 32.1311 45.6954 32.3552 45.0466L35.8618 34.8969C35.9363 34.6813 36.1056 34.5119 36.3212 34.4373L46.3597 30.9638C47.0062 30.7401 47.0325 29.8352 46.4002 29.5731L32.3947 23.7695V23.8142L32.3947 30.7636H25.0501H25.041Z" fill="black"></path></svg></span>
           <div class="card-title">Build</div>
           <p class="card-summary">
             Bring your vision to life with the most popular WordPress Website
@@ -150,8 +155,8 @@
         </div>
 
         <div class="card-content">
-          <span class="card-icon"><i class="fa-solid fa-heart"></i></span>
-          <div class="card-title">Build</div>
+          <span class="card-icon"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M23.7748 5.1709C31.0832 5.1709 34.727 9.22286 36.0923 15.9744C41.3126 16.3267 45.4286 20.5146 45.4286 25.681C45.4286 31.0823 40.9312 35.4659 35.3896 35.4659H33.7961L38.7586 26.9588C38.8651 26.7762 38.9216 26.5687 38.9223 26.3573C38.9231 26.1459 38.868 25.9381 38.7627 25.7548C38.6574 25.5715 38.5056 25.4192 38.3226 25.3134C38.1396 25.2075 37.932 25.1518 37.7206 25.1519H32.915V16.7421C32.9151 16.478 32.8282 16.2212 32.6677 16.0115C32.5073 15.8017 32.2821 15.6507 32.0272 15.5817C31.7722 15.5128 31.5017 15.5298 31.2573 15.6301C31.013 15.7304 30.8086 15.9084 30.6756 16.1366L22.2658 30.5533C22.1593 30.7359 22.1028 30.9434 22.1021 31.1548C22.1013 31.3661 22.1564 31.574 22.2617 31.7573C22.367 31.9406 22.5188 32.0928 22.7018 32.1987C22.8847 32.3046 23.0924 32.3603 23.3038 32.3602H28.1094V35.4659H13.7612C7.11536 35.4659 1.71436 30.2016 1.71436 23.7241C1.71436 17.677 6.61595 13.2967 12.6594 12.6704C15.1692 7.9737 17.9723 5.1709 23.7748 5.1709Z" fill="#0C0D0E"></path><g clip-path="url(#clip0_9_147657)"><path fill-rule="evenodd" clip-rule="evenodd" d="M32.915 16.742C32.9151 16.4779 32.8282 16.2211 32.6677 16.0114C32.5073 15.8016 32.2821 15.6506 32.0272 15.5817C31.7722 15.5128 31.5017 15.5297 31.2573 15.63C31.013 15.7303 30.8086 15.9084 30.6756 16.1365L22.2658 30.5533C22.1593 30.7358 22.1028 30.9433 22.1021 31.1547C22.1013 31.3661 22.1564 31.5739 22.2617 31.7572C22.367 31.9405 22.5188 32.0928 22.7018 32.1986C22.8847 32.3045 23.0924 32.3602 23.3038 32.3602H28.1094V40.7699C28.1093 41.034 28.1962 41.2908 28.3566 41.5006C28.5171 41.7103 28.7423 41.8613 28.9972 41.9303C29.2522 41.9992 29.5227 41.9822 29.7671 41.8819C30.0114 41.7816 30.2158 41.6036 30.3488 41.3754L38.7586 26.9587C38.8651 26.7761 38.9216 26.5687 38.9223 26.3573C38.9231 26.1459 38.868 25.9381 38.7627 25.7548C38.6574 25.5715 38.5056 25.4192 38.3226 25.3133C38.1396 25.2075 37.932 25.1517 37.7206 25.1518H32.915V16.742Z" fill="#0C0D0E"></path></g><defs><clipPath id="clip0_9_147657"><rect width="18.5023" height="6.50631" fill="white" transform="translate(20.4199 35.4658)"></rect></clipPath></defs></svg></span>
+          <div class="card-title">Host</div>
           <p class="card-summary">
             Bring your vision to life with the most popular WordPress Website
             Builder.
@@ -159,8 +164,8 @@
         </div>
 
         <div class="card-content">
-          <span class="card-icon"><i class="fa-solid fa-heart"></i></span>
-          <div class="card-title">Build</div>
+          <span class="card-icon"><svg xmlns="http://www.w3.org/2000/svg" width="48" height="49" viewBox="0 0 48 49" fill="none"><path fill-rule="evenodd" clip-rule="evenodd" d="M13.898 8.15527C9.06253 8.15527 5.14258 12.0752 5.14258 16.9107C5.14258 20.1814 6.93595 23.0332 9.59299 24.5365C17.6123 23.6084 20.2866 19.0861 20.3222 10.2256C20.2826 19.3256 23.5882 24.4872 34.8085 24.7148C24.4018 24.6792 20.8494 29.7009 20.3222 39.2013C20.2319 31.1559 18.5809 25.8707 9.89273 24.8828C7.07171 26.3367 5.14258 29.2783 5.14258 32.6705C5.14258 37.506 9.06253 41.426 13.898 41.426H34.1016C38.9371 41.426 42.857 37.506 42.857 32.6705C42.857 29.2049 40.8436 26.2096 37.9226 24.7906C40.8436 23.3716 42.857 20.3763 42.857 16.9107C42.857 12.0752 38.9371 8.15527 34.1016 8.15527H13.898ZM31.2438 9.99519C31.232 13.1015 32.7469 14.8735 36.1881 14.9395C32.9935 14.9276 31.406 16.6416 31.2438 19.8837C31.2162 16.8249 29.8463 14.9395 26.2996 14.9395C29.4731 14.8959 31.232 13.3639 31.2438 9.99519Z" fill="#0C0D0E"></path></svg></span>
+          <div class="card-title">Generate with AI</div>
           <p class="card-summary">
             Bring your vision to life with the most popular WordPress Website
             Builder.
@@ -189,10 +194,10 @@
       <div class="container main-build">
         <div class="row">
           <div class="col">
-            <h1 class="build-title">
+            <h2 class="build-title">
               Build Any Type of Website for Your Business
-            </h1>
-            <p class="summary">
+            </h2>
+            <p class="build-summary">
               Gain unlimited design flexibility with professional features and
               100+ widgets to match your needs.
             </p>
@@ -206,42 +211,40 @@
 
             <div class="col">
               <h2 class="build-heading">Dream it. Build it</h2>
-              <div class="build-content">
-                <div class="build-icon">
-                  <span><i class="fa-solid fa-heart"></i> </span>
-                </div>
-                <div class="build-main-content">
-                  <div class="main-title">Drag & Drop Editing</div>
+              <div class="build-container">
+                <div class="build-single-content">
+                  <span class="build-icon"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none"><g id="Icon"><path id="Union" fill-rule="evenodd" clip-rule="evenodd" d="M4 4H13V13H4L4 4ZM3 4C3 3.44771 3.44772 3 4 3H13C13.5523 3 14 3.44772 14 4V6V13C14 13.5523 13.5523 14 13 14H4C3.44771 14 3 13.5523 3 13V4ZM14 6C14.1169 6 14.2291 6.02005 14.3333 6.0569V6H14ZM16 16H15.4667V16.5V17H16.6C16.8209 17 17 16.8209 17 16.6V15.4667H16.5H16V16ZM17 14.3333H16.5H16V12.0667H16.5H17V14.3333ZM17 10.9333H16.5H16V8.66667H16.5H17V10.9333ZM17 7.53333H16.5H16V7H15.4667V6.5V6H16.6C16.8209 6 17 6.17909 17 6.4V7.53333ZM6 15.4667H6.5H7V16H7.53333V16.5V17H6.4C6.17909 17 6 16.8209 6 16.6V15.4667ZM8.66667 17V16.5V16H10.9333V16.5V17H8.66667ZM12.0667 17V16.5V16H14.3333V16.5V17H12.0667Z" fill="#0C0D0E"></path></g></svg></span>
                   <div class="build-main-content">
-                    Build perfectly designed websites with all-encompassing drag
-                    & drop tools that include powerful styling options to create
-                    exactly what you want.
+                    <h4>Drag & Drop Editing</h4>
+                    <div class="build-desc">
+                      Build perfectly dsigned websites
+                      with all-encompassing darg & drop tools
+                      that include powerful styling options to create exactly what you want.
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="build-content">
-                <div class="build-icon">
-                  <span><i class="fa-solid fa-heart"></i></span>
+
+                <div class="build-single-content">
+                  <span class="build-icon"><i class="fa-solid fa-heart"></i></span>
+                  <div class="build-main-content">
+                    <div class="build-content-title">unlimited Creativity</div>
+                  </div>
                 </div>
-                <div class="build-main-content">
-                  <div class="main-title">Drag & Drop Editing</div>
+
+                <div class="build-single-content">
+                  <span class="build-icon"><i class="fa-solid fa-heart"></i></span>
+                  <div class="build-main-content">
+                    <div class="build-content-title">Responsive Design</div>
+                  </div>
                 </div>
-              </div>
-              <div class="build-content">
-                <div class="build-icon">
-                  <span><i class="fa-solid fa-heart"></i></span>
+
+                <div class="build-single-content">
+                  <span class="build-icon"><i class="fa-solid fa-heart"></i></span> 
+                  <div class="build-main-content">
+                    <div class="build-content-title">Dynamic Elements</div>
+                  </div>
                 </div>
-                <div class="build-main-content">
-                  <div class="main-title">Drag & Drop Editing</div>
-                </div>
-              </div>
-              <div class="build-content">
-                <div class="build-icon">
-                  <span><i class="fa-solid fa-heart"></i></span>
-                </div>
-                <div class="build-main-content">
-                  <div class="main-title">Drag & Drop Editing</div>
-                </div>
+
               </div>
             </div>
           </div>
@@ -249,16 +252,161 @@
       </div>
     </section>
 
-    <section class="img-gallary">
-      <div class="conatiner">
+    <section class="img-gallary content-padding">
+      <div class="container">
+         <div class="gallary-header">
+           <h2 class="gallary-title">Launch It.Scale It</h2> 
+           <button class="cta-btn home-btn" >Get Started</button>
+          </div> 
         <div class="row">
-          <div class="col">
-            
+          <div class="col img-card-content">   
+            <div class="img-card">
+             <div class="img-card__title">Built-in <br> Marketing Tool</div>
+             <div class="img-card__desc">
+              Engage and convert website visitors with powerful marketing tools like forms, pop-ups, and landing pages built right into the Elementor system.</div>
+            </div>
+            <div class="img-card__image">
+              <img src="/assets/ele2.webp" alt="img">
+             </div>
+          </div>
+
+          <div class="col img-card-content">
+            <div class="img-card">
+              <div class="img-card__title">Built-in <br> Marketing Tool</div>
+              <div class="img-card__desc">
+               Engage and convert website visitors with powerful marketing tools like forms, pop-ups, and landing pages built right into the Elementor system.</div>
+             </div>
+             <div class="img-card__image">
+              <img src="/assets/ele3.webp" alt="img">
+             </div>
           </div>
         </div>
       </div>
     </section>
 
+     <section class="text-section content-padding">
+     <div class="full-width-container ">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <h2 class="main-section-title">
+              Give your webiste the <br> hosting home it deserves.
+            </h2>
+          </div>
+        </div>
+      </div>
+     </div>
+
+     </section>
+
+     <section class="tools content-padding">
+      <div class="full-width-container">
+        <div class="container">
+          <h2 class="tools-title">AI Tools for Faster, <br> Smarter Web Creation</h2>
+         <div class="row">
+          <div class="col ">
+               <img class="tools-img" src="/assets/visual-3-1.avif" alt="">
+          </div>
+          <div class="col">
+           <div class="tools-content">
+            <h3 class="tools-content-title">AI site planner: From Idea to wireframes - Fast!</h3>
+            <p class="tools-content-desc">
+              With the power of AI, turn your website vision into a meaningful brief, sitemap and wireframe at near-instant speed.</p>
+              <button class="cta-btn primary-btn">Start for freee</button>
+           </div>
+          </div>
+         </div>
+        </div>
+      </div>
+     </section>
+     
+  
+     <section class="slider-section content-padding">
+      <div class="full-width-container">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              
+              <div class="swiper productivity-swiper">
+                <h2 class="slider-section-heading">Take Your Productivity Sky High </h2>
+                <div class="swiper-wrapper">
+                 <div class="swiper-slide">
+                     <img src="assets/card4.avif" alt="img" />
+                      <h3 class="productivity__title">AI-Inspired Layout & Designs</h3>
+                      <p class="productivity__desc">
+                        Accelerate your workflow with AI assisted design and content tools that instantly suggest layouts and content to streamline your creative process while keeping everything on brand.</p>
+                 </div>
+                 <div class="swiper-slide">
+                  <img src="assets/card3.webp" alt="img" />
+                      <h3 class="productivity__title">AI-Inspired Layout & Designs</h3>
+                      <p class="productivity__desc">Accelerate your workflow with AI assisted design and content tools that instantly suggest layouts and content to streamline your creative process while keeping everything on brand.</p>
+                 </div>
+                 <div class="swiper-slide">
+                  <img src="assets/card1.png" alt="img" />
+                      <h3 class="productivity__title">AI-Inspired Layout & Designs</h3>
+                      <p class="productivity__desc">Accelerate your workflow with AI assisted design and content tools that instantly suggest layouts and content to streamline your creative process while keeping everything on brand.</p>
+                 </div>
+                 <div class="swiper-slide"><img src="assets/card1.png" alt="img" />
+                  <h3 class="productivity__title">AI-Inspired Layout & Designs</h3>
+                  <p class="productivity__desc">Accelerate your workflow with AI assisted design and content tools that instantly suggest layouts and content to streamline your creative process while keeping everything on brand.</p></div>
+                 <div class="swiper-slide"><img src="assets/card1.png" alt="img" />
+                  <h3 class="productivity__title">AI-Inspired Layout & Designs</h3>
+                  <p class="productivity__desc">Accelerate your workflow with AI assisted design and content tools that instantly suggest layouts and content to streamline your creative process while keeping everything on brand.</p></div>
+                </div>
+
+                <div class="swiper-nav-wrapper">
+                  <div class="swiper-button-prev">
+                    <i class="fa fa-arrow-left"></i>
+                  </div>
+                  <div class="swiper-button-next">
+                    <i class="fa fa-arrow-right"></i>
+                  </div>
+                </div>
+              
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+     </section>
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+  <!-- Swiper JS -->
+
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>    
     <script src="index.js"></script>
   </body>
 </html>
