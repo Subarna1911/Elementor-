@@ -37,3 +37,29 @@ window.addEventListener('scroll', function () {
       },
     },
   });
+
+
+  const counters = document.querySelectorAll('.count-digit');
+
+  counters.forEach(counter => {
+    const target = parseFloat(counter.getAttribute('data-target'));
+    const suffix = counter.getAttribute('data-suffix') || '';
+    let current = 0;
+    const increment = target / 100;
+  
+    const step = () => {
+      if (current < target) {
+        current += increment;
+        if (current >= target) current = target;
+  
+        const isFloat = !Number.isInteger(target);
+        const displayValue = isFloat ? current.toFixed(1) : Math.floor(current);
+  
+        counter.innerText = `${displayValue}${suffix}`;
+        requestAnimationFrame(step);
+      }
+    };
+  
+    step();
+  });
+  
