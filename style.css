@@ -840,6 +840,16 @@ h3.stack-card-images-title {
   font-size: 1.5rem;
 }
 
+.swiper-pagination{
+  display: none;
+}
+
+.articles-swiper{
+  display: none;
+}
+
+
+
 @media (max-width: 768px) {
   .row {
     flex-direction: column;
@@ -890,4 +900,97 @@ h3.stack-card-images-title {
   .container{
     overflow: hidden;
   }
+
+  h1.title {
+    font-size: 40px;
+    line-height: 3.5rem;
+}
+
+p.summary {
+  text-align: center;
+  font-size: 20px !important;
+}
+
+.count-content-section {
+  flex-direction: column;
+  text-align: center;
+}
+.count-digit {
+  font-size: 40px;
+}
+.content-padding{
+  padding: 20px 0;
+}
+h2.build-title {
+  font-size: 40px;
+  padding: 0;
+}
+
+p.build-summary {
+  font-size: 20px;
+  padding-bottom: 0;
+}
+
+.img-card-content {
+  flex-direction: column;
+  text-align: center;
+}
+
+h2.main-section-title {
+  font-size: 40px;
+}
+
+.stack-cards-desc {
+  font-size: 20px;
+  text-align: center;
+}
+
+h2.tools-title {
+  font-size: 40px;
+  padding-top: 0;
+}
+
+h2.scroll-section-heading {
+  font-size: 40px;
+  text-align: center;
+}
+
+.productivity-swiper{
+  width: 100% !important;
+}
+
+.swiper-nav-wrapper{
+  display: none;
+}
+
+p.productivity__desc {
+  margin-bottom: 20px;
+}
+
+.swiper-pagination{
+  display: block;
+}
+
+h2.slider-section-heading {
+  font-size: 30px;
+  padding-bottom: 20px;
+}
+
+p.articles-desc {
+  font-size: 20px;
+}
+
+.articles-card-section {
+  flex-direction: column;
+}
+
+h2.last-section-title {
+  font-size: 40px;
+}
+
+h2.build-heading {
+  text-align: center;
+}
+
+
 }

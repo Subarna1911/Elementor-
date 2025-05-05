@@ -25,18 +25,29 @@ window.addEventListener('scroll', function () {
       nextEl: '.productivity-swiper .swiper-button-next',
       prevEl: '.productivity-swiper .swiper-button-prev',
     },
-    breakpoints: {
-      1024: {
-        slidesPerView: 3,
-      },
-      768: {
-        slidesPerView: 2,
-      },
-      480: {
-        slidesPerView: 1,
-      },
+
+    pagination: {
+      el: '.swiper-pagination',
     },
+    breakpoints: {
+      // when window width is >= 320px
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 20
+      },
+      // when window width is >= 480px
+      480: {
+        slidesPerView: 2,
+        spaceBetween: 30
+      },
+      // when window width is >= 640px
+      640: {
+        slidesPerView: 3,
+        spaceBetween: 40
+      }
+    }
   });
+
 
 
   const counters = document.querySelectorAll('.count-digit');
