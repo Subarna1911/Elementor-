@@ -1,0 +1,1 @@
+Built a responsive Elementor website clone as a frontend project using HTML, CSS, and JavaScript. Implemented scroll animations, interactive components, and ensured mobile responsiveness for a real-world UI experience.
