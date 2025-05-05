@@ -63,3 +63,30 @@ window.addEventListener('scroll', function () {
     step();
   });
   
+
+const scrollSection = document.querySelector('.scroll-section');
+const leftScroller = document.querySelector('.scroll-left');
+const rightScroller = document.querySelector('.scroll-right');
+
+window.addEventListener('scroll', () => {
+  const sectionTop = scrollSection.offsetTop;
+  const sectionHeight = scrollSection.offsetHeight;
+  const scrollY = window.scrollY;
+  const windowHeight = window.innerHeight;
+
+  if (scrollY + windowHeight > sectionTop && scrollY < sectionTop + sectionHeight) {
+    const scrollProgress = (scrollY + windowHeight - sectionTop) / (sectionHeight + windowHeight);
+
+    // Total distance you want to scroll
+    const maxScroll = 200;
+
+    // Scroll from -200px to 0 (starts from offscreen left)
+    const leftScroll = (1 - scrollProgress) * maxScroll;
+    const rightScroll = scrollProgress * maxScroll;
+
+    leftScroller.style.transform = `translateX(-${leftScroll}px)`;
+    rightScroller.style.transform = `translateX(${rightScroll}px)`;
+  }
+});
+
+

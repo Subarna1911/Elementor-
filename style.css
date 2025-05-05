@@ -4,6 +4,9 @@
   margin: 0;
 }
 
+body{
+  overflow-x: hidden;
+}
 
 
 :root {
@@ -48,7 +51,6 @@ a {
 
 a {
   font-family: "Erode", serif;
-  /* font-weight: 400 !important; */
   outline: none !important;
 }
 
@@ -453,13 +455,20 @@ h2.build-heading {
   font-size: 1.2rem;
 }
 
+
+
 .text-section{
   background-color: #0c0d0e;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 500pxs;
+  height: 100vh;
+  width: 100vw;
+  position: sticky;
+  top: 0;
+ z-index: 2;
 }
+
 
 .main-section-title {
   color: #ff7be5;
@@ -585,31 +594,21 @@ h3.tools-content-title {
 
 /* scroll section  */
 
-.scroll-section{
+.scroll-section {
   background-color: #05047e;
+  overflow: hidden;
 }
 
 .scroll-section-content{
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 2rem 0;
 }
 
 .scroll-section-heading{
   font-size: 72px;
   color: white;
-}
-
-.scroll-card-section{
-  display: flex;
-  gap: 2rem;
-  margin-top: 30px;
-  
-}
-
-.scroll-card img{
-  width: 380px;
-  border-radius: 10px;
 }
 
 .scroll-footer-content h3{
@@ -623,8 +622,48 @@ h3.tools-content-title {
   color: white;
   font-size: 1.2rem;
   text-align: center;
+  padding: 2rem 0;
 }
 
+a.scroll-footer-btn {
+  color: white;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+
+.scroll-card-wrapper {
+  position: relative;
+  height: 680px;
+  margin: 2rem 0;
+}
+
+.scroll-card img{
+  width: 100%;
+  border-radius: 10px;
+  height: auto;
+  height: 300px;
+  object-fit: cover;
+
+}
+
+.scroll-card-section {
+  display: flex;
+  gap: 20px;
+  transition: transform 0.2s ease-out;
+  will-change: transform;
+  margin-bottom: 20px;
+}
+
+.scroll-card {
+  flex: 0 0 auto;
+}
+
+.scroll-footer-content {
+  text-align: center;
+}
 
 /* articles section */
 
@@ -748,6 +787,57 @@ p.last-section-desc {
 
 .count-content-section p{
   font-size: 1.2rem;
+}
+
+/* stack card images section */
+
+
+.stack-cards-section{
+  position: sticky;
+  top: 0;
+  z-index: 3;
+  background-color: white;
+  border-radius: 40px 40px 0 0;
+  z-index: 10;
+}
+
+.stack-cards-images img{
+  background-color: white;
+  width: 100%;
+}
+
+.stack-cards{
+  padding: 3rem;
+  position: sticky;
+  top: 0;
+  border-radius: 1rem;
+}
+
+.stack-cards:nth-child(odd){
+  background-color:#dce6ff;
+}
+
+.stack-cards:nth-child(even){
+  background-color:#000000 ;
+  color: white;
+}
+
+h3.stack-cards-title {
+  font-size: 2.5rem;
+}
+
+.stack-cards-desc {
+  font-size: 1.5rem;
+  padding: 2rem 0;
+}
+
+p.stack-card-images-desc {
+  font-size: 20px;
+  padding: 2rem 0;
+}
+
+h3.stack-card-images-title {
+  font-size: 1.5rem;
 }
 
 @media (max-width: 768px) {
